@@ -173,7 +173,7 @@ EOF
 }
 
 add-zsh-hook zshaddhistory _histdb_addhistory
-precmd_functions+=(histdb-update-outcome)
+precmd_functions+=(_histdb_update_outcome)
 
 histdb-top () {
     _histdb_init
